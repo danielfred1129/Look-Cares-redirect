@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TheLookCompanyModelStoreContainer" CdmEntityContainer="TLC_DBEntities">
+    <EntitySetMapping Name="tbFabrics">
+      <EntityTypeMapping TypeName="TheLookCompanyModel.tbFabric">
+        <MappingFragment StoreEntitySet="tbFabrics">
+          <ScalarProperty Name="kFabric" ColumnName="kFabric" />
+          <ScalarProperty Name="kLookClient" ColumnName="kLookClient" />
+          <ScalarProperty Name="kLookClientCustomer" ColumnName="kLookClientCustomer" />
+          <ScalarProperty Name="kFrame" ColumnName="kFrame" />
+          <ScalarProperty Name="vcItemNumber" ColumnName="vcItemNumber" />
+          <ScalarProperty Name="vcSerialNumber" ColumnName="vcSerialNumber" />
+          <ScalarProperty Name="intHeight" ColumnName="intHeight" />
+          <ScalarProperty Name="intWidth" ColumnName="intWidth" />
+          <ScalarProperty Name="vcExtrusion" ColumnName="vcExtrusion" />
+          <ScalarProperty Name="vcFileName" ColumnName="vcFileName" />
+          <ScalarProperty Name="vcNFCUrl" ColumnName="vcNFCUrl" />
+          <ScalarProperty Name="vcLookCSR" ColumnName="vcLookCSR" />
+          <ScalarProperty Name="dtShippedFromTLC" ColumnName="dtShippedFromTLC" />
+          <ScalarProperty Name="dtInstalled" ColumnName="dtInstalled" />
+          <ScalarProperty Name="vcSource" ColumnName="vcSource" />
+          <ScalarProperty Name="vcClientID" ColumnName="vcClientID" />
+          <ScalarProperty Name="vcClientName" ColumnName="vcClientName" />
+          <ScalarProperty Name="vcStatus" ColumnName="vcStatus" />
+          <ScalarProperty Name="vcFileName1" ColumnName="vcFileName1" />
+          <ScalarProperty Name="vcType1" ColumnName="vcType1" />
+          <ScalarProperty Name="intFileSize1" ColumnName="intFileSize1" />
+          <ScalarProperty Name="fFile1" ColumnName="fFile1" />
+          <ScalarProperty Name="vcFileName2" ColumnName="vcFileName2" />
+          <ScalarProperty Name="vcType2" ColumnName="vcType2" />
+          <ScalarProperty Name="intFileSize2" ColumnName="intFileSize2" />
+          <ScalarProperty Name="fFile2" ColumnName="fFile2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

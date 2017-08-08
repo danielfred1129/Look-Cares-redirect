@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TheLookCompanyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbFabric">
+    <Key>
+      <PropertyRef Name="kFabric" />
+    </Key>
+    <Property Name="kFabric" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kLookClient" Type="Int32" />
+    <Property Name="kLookClientCustomer" Type="Int32" />
+    <Property Name="kFrame" Type="Int32" />
+    <Property Name="vcItemNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcSerialNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="intHeight" Type="Int32" />
+    <Property Name="intWidth" Type="Int32" />
+    <Property Name="vcExtrusion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcFileName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcNFCUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcLookCSR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="dtShippedFromTLC" Type="DateTime" Precision="7" />
+    <Property Name="dtInstalled" Type="DateTime" Precision="7" />
+    <Property Name="vcSource" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcClientID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcClientName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcFileName1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcType1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="intFileSize1" Type="Int32" />
+    <Property Name="fFile1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcFileName2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="vcType2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="intFileSize2" Type="Int32" />
+    <Property Name="fFile2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="TLC_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbFabrics" EntityType="Self.tbFabric" />
+  </EntityContainer>
+</Schema>

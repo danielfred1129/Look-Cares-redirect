@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TLC_DBEntities-Web.config Connection String" description="TLC_DBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/TlcDataModel.csdl|res://*/TlcDataModel.ssdl|res://*/TlcDataModel.msl;provider=System.Data.SqlClient;provider connection string='data source=&quot;hkbvk8dbx5.database.windows.net, 1433&quot;;initial catalog=TheLookCompany;persist security info=True;user id=loginTLCapp@hkbvk8dbx5;password=TLC_@pplication!;MultipleActiveResultSets=True;App=EntityFramework'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\My\ Work\\Petro\ Lysenko\\TlcMvc\\TlcMvc\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TLC_DBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\My\ Work\\Petro\ Lysenko\\TlcMvc\\TlcMvc\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

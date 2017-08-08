@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.fileName != null && ViewBag.fileName != "")
+{
+    <img src="@ViewBag.fileName" />
+}
+
+<p>@ViewBag.Message</p>

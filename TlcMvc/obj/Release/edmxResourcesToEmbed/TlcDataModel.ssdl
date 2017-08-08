@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TheLookCompanyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbFabrics">
+    <Key>
+      <PropertyRef Name="kFabric" />
+    </Key>
+    <Property Name="kFabric" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kLookClient" Type="int" />
+    <Property Name="kLookClientCustomer" Type="int" />
+    <Property Name="kFrame" Type="int" />
+    <Property Name="vcItemNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcSerialNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="intHeight" Type="int" />
+    <Property Name="intWidth" Type="int" />
+    <Property Name="vcExtrusion" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcFileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcNFCUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcLookCSR" Type="nvarchar" MaxLength="255" />
+    <Property Name="dtShippedFromTLC" Type="datetime2" Precision="7" />
+    <Property Name="dtInstalled" Type="datetime2" Precision="7" />
+    <Property Name="vcSource" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcClientID" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcClientName" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcStatus" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcFileName1" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcType1" Type="nvarchar" MaxLength="255" />
+    <Property Name="intFileSize1" Type="int" />
+    <Property Name="fFile1" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcFileName2" Type="nvarchar" MaxLength="255" />
+    <Property Name="vcType2" Type="nvarchar" MaxLength="255" />
+    <Property Name="intFileSize2" Type="int" />
+    <Property Name="fFile2" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="TheLookCompanyModelStoreContainer">
+    <EntitySet Name="tbFabrics" EntityType="Self.tbFabrics" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
